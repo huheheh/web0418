@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header id="navigation">
+            <a href="#" class="logo"><img src="./imgs/unpyeong300300.png" alt=""></a>
+            <ul>
+                <li><a href="#">민원안내</a></li>
+                <li><a href="#">구민참여</a></li>
+                <li><a href="#">열린참여</a></li>
+                <li><a href="#">은평소개</a></li>
+            </ul>
+        </header>
+        <div class="content logo">
+            <div class="textBox">
+                <h2>그냥 은평구가 아닙니다.서울의<span>은평구</span>입니다</h2>
+                <p>여러분이 보지 못한 은평구의 아름다움을 한번 느껴보세요.시간이 나지 않아 찾아가지못한다면 이곳에서 한번 느껴보시길 바랍니다.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="./imgs/unpyeong-1.png" alt="img1" class="MTE">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./imgs/unpyeong mark-1.png" alt="" onclick="imgSlider('./imgs/hanokimg01.jpg'); changeCircleColor('#017143');"></li>
+            <li><img src="./imgs/pabal-1.png" alt="" onclick="imgSlider('./imgs/nni4551.png'); changeCircleColor('#ff6600');"></li>
+            <li><img src="./imgs/unpyeong33222.png" alt="" onclick="imgSlider('./imgs/hkj45445.png'); changeCircleColor('#0067a3');"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./imgs/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./imgs/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="./imgs/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.MTE').src = anything;
+        }
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+</html>
